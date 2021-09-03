@@ -70,4 +70,7 @@ Test19_interrupt_park
     没有t1.interrupt()则t1一直停止，t1.interrupt()让park解除，且打断标记为true，可以视为正常打断。
     此时线程t1再遇到LockSupport.park();就不会再停下来了，也就是打断标记为true的情况下，park会失效
     解决办法是不用isInterrupted()返回打断标记，而用Thread.interrupted()返回，因为Thread.interrupted()会清除线程t1的打断标记。
+Test20
+    不推荐的方法
+    还有一些不推荐的方法，这些方法已经过时，容易破坏同步代码块，造成线程死锁。//stop()、suspend()、resume()
 
