@@ -37,10 +37,14 @@ public class Test14_join2 {
 
         long start = System.currentTimeMillis();
         log.debug("join start");
-        t1.join();
-        log.debug("t1 join end");
+//        t1.join();
+//        log.debug("t1 join end");
+//        t2.join();
+//        log.debug("t2 join end");
         t2.join();
         log.debug("t2 join end");
+        t1.join();
+        log.debug("t1 join end");
         long end = System.currentTimeMillis();
 
         log.debug("r1 = {}, r2 = {}, cost = {}", r1,r2,end - start);
@@ -53,3 +57,10 @@ public class Test14_join2 {
 //15:25:17.319 c.Test14_join2 [main] - t1 join end
 //15:25:18.318 c.Test14_join2 [main] - t2 join end
 //15:25:18.318 c.Test14_join2 [main] - r1 = 10, r2 = 20, cost = 2013
+
+
+//颠倒t1和t2的次序，此时等待时间还是2秒。因为在等待t2的过程中，t1已经执行完了任务。
+//15:32:37.167 c.Test14_join2 [main] - join start
+//15:32:39.170 c.Test14_join2 [main] - t2 join end
+//15:32:39.170 c.Test14_join2 [main] - t1 join end
+//15:32:39.170 c.Test14_join2 [main] - r1 = 10, r2 = 20, cost = 2004
