@@ -10,6 +10,7 @@ Test3
     重写Callable匿名接口对象的call()方法，作为参数传入FutureTask对象。
     再把FutureTask对象作为参数传入Thread对象。
     Future对象的get()方法会阻塞一直等待线程结束，并获取Callable的call()方法的返回值。
-
+Test4_MultiThread
+    多个线程同时运行的例子
 
 
