@@ -26,7 +26,8 @@ Test7_start_vs_run
 Test8_status
     getState()获取线程的状态。
     同一个线程多次调用start()方法会报java.lang.IllegalThreadStateException异常。
-
+Test9_sleep
+    线程调用sleep()方法。该线程在线程外部调用getState()方法查看线程状态。
 
 
 
