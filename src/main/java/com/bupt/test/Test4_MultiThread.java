@@ -12,12 +12,22 @@ public class Test4_MultiThread {
     public static void main(String[] args) {
         new Thread(() -> {
             while(true){
+                try {
+                    Thread.sleep(500);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
                 log.debug("running");
             }
         },"t1").start();
 
         new Thread(() -> {
             while(true){
+                try {
+                    Thread.sleep(500);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
                 log.debug("running");
             }
         },"t2").start();
