@@ -21,13 +21,15 @@ Test6_Frames2
     不同线程的栈之间是相互独立不干扰的。可以通过IDEA的调试器观察（注意断点类型不要选择默认的ALL，而是线程类型）。
 Test7_start_vs_run
     start()方法和run()方法的比较
-    直接调用run()方法，并没有启动新的线程，而是由主方法的线程在执行。本质上还是单线程，依然是同步而非异步。
+    线程直接调用run()方法，并没有启动新的线程，而是由主方法的线程在执行。本质上还是单线程，依然是同步而非异步。
     start()方法才会启动一个新的线程，让新的线程进入就绪状态。
 Test8_status
     getState()获取线程的状态。
     同一个线程多次调用start()方法会报java.lang.IllegalThreadStateException异常。
 Test9_sleep
-    线程调用sleep()方法。该线程在线程外部调用getState()方法查看线程状态。
-
-
+    线程t1调用sleep()方法。该线程在线程外部调用getState()方法查看线程状态。
+Test10_interrupt
+    线程t1调用sleep()方法。该线程在线程外部调用interrupt()方法打断正在睡眠的线程t1，此时sleep()方法会抛出InterruptedException异常，t1被唤醒。
+    睡眠结束后，线程未必立刻得到执行。
+    建议用TimeUnit的sleep替代Thread的sleep。例如，用TimeUnit.SECONDS.sleep(2);取代Thread.sleep(2000);
 
