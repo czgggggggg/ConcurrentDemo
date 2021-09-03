@@ -32,4 +32,12 @@ Test10_interrupt
     线程t1调用sleep()方法。该线程在线程外部调用interrupt()方法打断正在睡眠的线程t1，此时sleep()方法会抛出InterruptedException异常，t1被唤醒。
     睡眠结束后，线程未必立刻得到执行。
     建议用TimeUnit的sleep替代Thread的sleep。例如，用TimeUnit.SECONDS.sleep(2);取代Thread.sleep(2000);
+Test11_yield
+    yield和优先级的例子不大好设计，因为如果没有其他线程和当前线程竞争CPU资源，那么当前线程还是会处于运行状态。
+    Thread.yield()会让线程从运行状态转换为就绪状态，然后调度执行其他线程，而sleep()是让线程从运行状态转换为阻塞状态。
+    线程优先级会提示（hint）调度器优先调度该线程，但它仅仅只是一个提示，调度器可以忽略它。
+    Thread中提供了1~10 共10个优先级，最小优先级MIN_PRIORITY = 1，默认优先级NORM_PRIORITY = 5，最大优先级MAX_PRIORITY = 10。
+    如果CPU比较忙，优先级高的线程会获得更多的时间片，如果CPU比较空闲，优先级几乎没有作用。
+    案例中无论是让线程1调用yield()，还是给线程2更高的优先级，都会让线程2计算更多次count++。
+    最终还是由操作系统的调度器来给线程分配CPU时间片，yield()和优先级高低本质上还是控制不了的。
 

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="063f2a3d-ce65-4155-9294-c3d39ef41c57" name="默认" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bupt/test/Test10_interrupt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bupt/test/Test11_yield_vs_priority.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VersionControl" beforeDir="false" afterPath="$PROJECT_DIR$/VersionControl" afterDir="false" />
     </list>
@@ -25,14 +25,14 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="VersionControl" value="1" />
-          <entry key="java" value="31" />
+          <entry key="java" value="35" />
           <entry key="md" value="1" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="31" />
+          <entry key="JAVA" value="35" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="2" />
@@ -40,16 +40,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="VersionControl" value="1291" />
-          <entry key="dummy" value="4" />
-          <entry key="java" value="1966" />
+          <entry key="VersionControl" value="1713" />
+          <entry key="dummy" value="19" />
+          <entry key="java" value="2923" />
           <entry key="xml" value="91" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1966" />
-          <entry key="PLAIN_TEXT" value="1295" />
+          <entry key="JAVA" value="2923" />
+          <entry key="PLAIN_TEXT" value="1732" />
           <entry key="XML" value="91" />
         </counts>
       </usages-collector>
@@ -60,50 +60,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/VersionControl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="399">
+              <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bupt/test/Test7_start_vs_run.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bupt/test/Test11_yield_vs_priority.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bupt/test/Test10_interrupt.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bupt/test/Test8_state.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bupt/test/Test6_Frames2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-              <folding>
-                <element signature="e#182#279#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="631">
+              <caret line="35" selection-start-line="35" selection-start-column="2" selection-end-line="36" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -120,6 +87,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>run</find>
+      <find>setP</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -188,6 +156,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/bupt/test/Test9_sleep_vs_yield.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bupt/test/Test9_sleep.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bupt/test/Test10_interrupt.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bupt/test/Test11_yield.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bupt/test/Test11_yield_vs_priority.java" />
         <option value="$PROJECT_DIR$/VersionControl" />
       </list>
     </option>
@@ -198,7 +168,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="1940" />
@@ -337,10 +307,10 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="Callable&#9;PSI&#9;JAVA://java.util.concurrent.Callable&#10;FutureTask&#9;PSI&#9;JAVA://java.util.concurrent.FutureTask" />
+    <property name="SearchEverywhereHistoryKey" value="Thread&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/lang/Thread.java&#10;Callable&#9;PSI&#9;JAVA://java.util.concurrent.Callable&#10;FutureTask&#9;PSI&#9;JAVA://java.util.concurrent.FutureTask" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1630641496984" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1630650915213" />
     <property name="last_opened_file_path" value="D:/softwareforcode/Soot/ProjectForSoot/SootDemo" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -370,7 +340,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Test10_interrupt">
+  <component name="RunManager">
     <configuration name="Test10_interrupt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.bupt.test.Test10_interrupt" />
       <module name="Concurrent" />
@@ -384,8 +354,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test6_Frames2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.bupt.test.Test6_Frames2" />
+    <configuration name="Test11_yield_vs_priority" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bupt.test.Test11_yield_vs_priority" />
       <module name="Concurrent" />
       <extension name="coverage">
         <pattern>
@@ -437,19 +407,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Test6_Frames2" />
       <item itemvalue="Application.Test7_start_vs_run" />
       <item itemvalue="Application.Test8_state" />
       <item itemvalue="Application.Test9_sleep" />
       <item itemvalue="Application.Test10_interrupt" />
+      <item itemvalue="Application.Test11_yield_vs_priority" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test11_yield_vs_priority" />
         <item itemvalue="Application.Test10_interrupt" />
         <item itemvalue="Application.Test9_sleep" />
         <item itemvalue="Application.Test8_state" />
         <item itemvalue="Application.Test7_start_vs_run" />
-        <item itemvalue="Application.Test6_Frames2" />
       </list>
     </recent_temporary>
   </component>
@@ -463,12 +433,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1630600488996</updated>
-      <workItem from="1630600491363" duration="12879000" />
+      <workItem from="1630600491363" duration="17491000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12879000" />
+    <option name="totallyTimeSpent" value="17491000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -499,7 +469,7 @@
       <window_info anchor="bottom" id="调试" weight="0.36563876" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32892805" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.43612334" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.34801763" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -589,17 +559,6 @@
             <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="162" column="21" selection-start-line="162" selection-start-column="21" selection-end-line="162" selection-end-column="21" />
-          <folding>
-            <element signature="e#19132#19133#0" expanded="true" />
-            <element signature="e#19175#19176#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -707,9 +666,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="246" column="28" selection-start-line="246" selection-start-column="28" selection-end-line="246" selection-end-column="28" />
+          <folding>
+            <element signature="e#19132#19133#0" expanded="true" />
+            <element signature="e#19175#19176#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bupt/test/Test10_interrupt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
+        <state relative-caret-position="198">
           <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -717,10 +687,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bupt/test/Test11_yield_vs_priority.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="631">
+          <caret line="35" selection-start-line="35" selection-start-column="2" selection-end-line="36" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/VersionControl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="399">
+          <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
         </state>
       </provider>
     </entry>
