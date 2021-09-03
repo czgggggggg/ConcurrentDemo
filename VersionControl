@@ -59,3 +59,7 @@ Test16_interrupt_block
     以sleep为例，会抛出异常、情况打断状态，isInterrupted()的返回值为false，而打断正常运行的线程，isInterrupted()的返回值为true。
 Test17_interrupt_normal
     打断正常的例子
+    打断正常运行的线程，不会清空打断状态。
+Test18
+    两阶段终止模式的实现
+    原理上理解的还可以，实现的理解不充分。
