@@ -23,6 +23,9 @@ Test7_start_vs_run
     start()方法和run()方法的比较
     直接调用run()方法，并没有启动新的线程，而是由主方法的线程在执行。本质上还是单线程，依然是同步而非异步。
     start()方法才会启动一个新的线程，让新的线程进入就绪状态。
+Test8_status
+    getState()获取线程的状态。
+    同一个线程多次调用start()方法会报java.lang.IllegalThreadStateException异常。
 
 
 
