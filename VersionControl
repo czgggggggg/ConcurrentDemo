@@ -53,3 +53,9 @@ Test15_join3
     有时效的join
     等待时间不够，就不等待被等待线程执行完，继续往下执行。
     等待时间超过被等待线程的运行时长，那么当被等待线程运行结束时，就立马结束等待。
+Test16_interrupt_block
+    打断阻塞
+    interrupt()打断sleep、wait、join的线程，被打断的线程都会进入阻塞状态。
+    以sleep为例，会抛出异常、情况打断状态，isInterrupted()的返回值为false，而打断正常运行的线程，isInterrupted()的返回值为true。
+Test17_interrupt_normal
+    打断正常的例子
