@@ -1,0 +1,15 @@
+Test1
+    第一种创建线程的方法：直接使用Thread。重写run()方法，调用start()方法启动线程。
+    thread.setName()给线程命名。
+Test2
+    第二种创建线程的方法：使用Runnable配合Thread。把任务封装到Runnable接口对象的run()方法中，然后把这个接口对象作为参数传递给Thread对象，并启动。
+    Java8使用lambda简化代码。Runnable有一个@FunctionalInterface接口，意味着接口中只有一个抽象方法。
+Test3
+    第三种创建线程的方法：使用FutureTask配合Thread。 //Callable -> FutureTask -> Thread
+    FutureTask类的构造方法可以传入一个Callable接口对象，Callable接口有一个call方法（有一个返回值还能抛出异常）。
+    重写Callable匿名接口对象的call()方法，作为参数传入FutureTask对象。
+    再把FutureTask对象作为参数传入Thread对象。
+    Future对象的get()方法会阻塞一直等待线程结束，并获取Callable的call()方法的返回值。
+
+
+

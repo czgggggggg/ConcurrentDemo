@@ -1,5 +1,0 @@
-Test1
-    第一种创建线程的方法：直接使用Thread。重写run()方法，调用start()方法启动线程。
-    thread.setName()给线程命名。
-Test2
-    第二种创建线程的方法：使用Runnable配合Thread。把任务封装到Runnable接口对象的run()方法中，然后把这个接口对象作为参数传递给Thread对象，并启动。
