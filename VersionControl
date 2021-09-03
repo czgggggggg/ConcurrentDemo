@@ -72,5 +72,7 @@ Test19_interrupt_park
     解决办法是不用isInterrupted()返回打断标记，而用Thread.interrupted()返回，因为Thread.interrupted()会清除线程t1的打断标记。
 Test20
     不推荐的方法
-    还有一些不推荐的方法，这些方法已经过时，容易破坏同步代码块，造成线程死锁。//stop()、suspend()、resume()
-
+    还有一些不推荐的方法，这些方法已经过时（@Deprecated注解），容易破坏同步代码块，造成线程死锁。//stop()、suspend()、resume()
+Test21_daemon
+    守护线程
+    t1.setDaemon()设置线程t1为守护线程。只要所有其他被守护线程都没有结束，守护线程就不能结束。只要所有其他被守护线程都结束了，那么守护线程即使没有执行完也必须结束。
