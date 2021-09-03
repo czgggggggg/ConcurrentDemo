@@ -63,3 +63,11 @@ Test17_interrupt_normal
 Test18
     两阶段终止模式的实现
     原理上理解的还可以，实现的理解不充分。
+    //另外，注意一下，isInterrupted()和interrupted()方法都会返回打断标记，但是，interrupted()会清除打断标记，而isInterrupted()不会。
+Test19_interrupt_park
+    打断park
+    LockSupport.park();
+    没有t1.interrupt()则t1一直停止，t1.interrupt()让park解除，且打断标记为true，可以视为正常打断。
+    此时线程t1再遇到LockSupport.park();就不会再停下来了，也就是打断标记为true的情况下，park会失效
+    解决办法是不用isInterrupted()返回打断标记，而用Thread.interrupted()返回，因为Thread.interrupted()会清除线程t1的打断标记。
+
