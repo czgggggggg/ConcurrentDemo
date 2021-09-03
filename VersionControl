@@ -76,3 +76,6 @@ Test20
 Test21_daemon
     守护线程
     t1.setDaemon()设置线程t1为守护线程。只要所有其他被守护线程都没有结束，守护线程就不能结束。只要所有其他被守护线程都结束了，那么守护线程即使没有执行完也必须结束。
+Test22
+    线程在Java中的6种状态
+    NEW、RUNNABLE、TERMINATED、TIMED_WAITING、WAITING、BLOCKED
