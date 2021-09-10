@@ -88,3 +88,5 @@ Test25
     使用synchronized解决Test24中的问题。//synchronized用对象锁保证了临界区内代码的原子性。
 Test26
     锁对象的面向对象改进
+Test27
+    synchronized加在方法上。//加在成员方法上，等价于锁上了this对象；加在静态方法上，等价于锁上了类。
